@@ -1,5 +1,1 @@
-curl -X POST \
-  -H "Authorization: Bearer YOUR_API_KEY" \
-  -H "Content-Type: application/json" \
-  -d '{"prompt": "YOUR_QUESTION"}' \
-  https://api.openai.com/v1/engines/davinci-codex/completions
+curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer YOUR_API_KEY" -d "{\"prompt\": \"YOUR_QUESTION\"}" "https://api.openai.com/v1/engines/davinci-codex/completions" > response.json
